@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MARTINS LTD - Grocery Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #6a0dad;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #ffcc00;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #6a0dad;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1606788075761-9d5e4a4e6a2b') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      background: rgba(0,0,0,0.5);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 50px 20px;
+      background: #fff;
+    }
+
+    .card {
+      background: #f4f4f9;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      color: #6a0dad;
+    }
+
+    .card p {
+      padding: 0 15px 20px;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MARTINS LTD</h1>
+    <p>Your Trusted Grocery Shop</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Fresh Groceries Every Day</h2>
+    <p>From farm to your kitchen — quality you can trust.</p>
+  </section>
+
+  <section class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606788075761-9d5e4a4e6a2b" alt="Fresh Fruits">
+      <h3>Fresh Fruits</h3>
+      <p>Hand-picked seasonal fruits full of freshness and taste.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601050690597-5a3bb1e841c4" alt="Vegetables">
+      <h3>Vegetables</h3>
+      <p>Green, organic, and healthy vegetables for your meals.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1625944139030-6a0c97bd7c1a" alt="Bakery">
+      <h3>Bakery</h3>
+      <p>Freshly baked bread, cakes, and pastries every morning.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600185365926-3a1d07a2a9ad" alt="Dairy Products">
+      <h3>Dairy Products</h3>
+      <p>Pure milk, butter, and cheese for your daily nutrition.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 MARTINS LTD. All rights reserved.
+  </footer>
+</body>
+</html>
